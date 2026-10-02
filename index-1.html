@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>انرژی پاک | راهکارهای خورشیدی برای خانه و کسب‌وکار</title>
+  <meta name="description" content="انرژی پاک؛ طراحی، مشاوره و اجرای راهکارهای خورشیدی برای خانه، فروشگاه، ویلا و کسب‌وکار با قیمت‌گذاری شفاف و پشتیبانی حرفه‌ای.">
+  <style>
+    :root{
+      --green:#0d5b43;
+      --green-2:#178a65;
+      --green-3:#e7f7ef;
+      --dark:#17332a;
+      --gold:#f4c542;
+      --gold-2:#ffd96a;
+      --bg:#f5f8f6;
+      --white:#ffffff;
+      --muted:#64756e;
+      --shadow:0 10px 30px rgba(15,40,30,.08);
+      --radius:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Tahoma,Arial,sans-serif;
+      background:linear-gradient(180deg,#f5f8f6 0%,#eff8f3 100%);
+      color:var(--dark);
+      line-height:1.9;
+    }
+    a{text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--max);margin:auto;padding:0 20px}
+    .nav{
+      position:sticky;top:0;z-index:30;
+      background:rgba(255,255,255,.88);
+      backdrop-filter:blur(12px);
+      box-shadow:0 4px 18px rgba(0,0,0,.05);
+      border-bottom:1px solid rgba(0,0,0,.05);
+    }
+    .nav-wrap{
+      max-width:var(--max);margin:auto;padding:12px 20px;
+      display:flex;align-items:center;justify-content:space-between;gap:16px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:12px;font-weight:800;color:var(--green);
+      font-size:22px;
+    }
+    .brand-badge{
+      width:46px;height:46px;border-radius:14px;
+      background:linear-gradient(135deg,var(--green),#0ea06e);
+      display:grid;place-items:center;box-shadow:var(--shadow);color:#fff;font-size:23px;
+    }
+    .menu{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .menu a{
+      color:var(--dark);font-weight:700;padding:8px 12px;border-radius:12px;
+    }
+    .menu a:hover{background:#eef7f2}
+    .menu .cta{
+      background:linear-gradient(135deg,var(--gold),var(--gold-2));
+      color:#163127;
+      box-shadow:var(--shadow)
+    }
+
+    .hero{
+      padding:60px 0 34px;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;inset:auto -120px -120px auto;
+      width:360px;height:360px;border-radius:50%;
+      background:radial-gradient(circle,var(--gold-2),rgba(255,217,106,0));
+      opacity:.55;
+      filter:blur(6px);
+      pointer-events:none;
+    }
+    .hero-grid{
+      display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center;
+    }
+    .hero-card{
+      background:linear-gradient(145deg,var(--green) 0%,#0d6b4f 50%,#119669 100%);
+      color:#fff;border-radius:32px;padding:34px;box-shadow:var(--shadow);position:relative;overflow:hidden;
+    }
+    .hero-card:after{
+      content:"";position:absolute;left:-70px;bottom:-70px;width:220px;height:220px;border-radius:50%;
+      background:rgba(255,255,255,.08);
+    }
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:10px;
+      background:rgba(255,255,255,.13);padding:8px 14px;border-radius:999px;
+      font-size:14px;font-weight:700;margin-bottom:16px;
+    }
+    .hero h1{
+      margin:0 0 14px;font-size:44px;line-height:1.35
+    }
+    .hero p{
+      margin:0 0 24px;font-size:18px;color:#e9fff5
+    }
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:14px 22px;border-radius:14px;font-weight:800;
+      transition:.2s ease;cursor:pointer;
+    }
+    .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#17332a}
+    .btn-secondary{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.18)}
+    .btn:hover{transform:translateY(-2px)}
+    .hero-art{
+      background:#fff;border-radius:32px;padding:18px;box-shadow:var(--shadow);
+    }
+    .hero-art svg{width:100%;height:auto}
+
+    .stats{margin-top:24px}
+    .stats-grid{
+      display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+    }
+    .stat{
+      background:#fff;padding:20px;border-radius:24px;box-shadow:var(--shadow);text-align:center
+    }
+    .stat strong{
+      display:block;color:var(--green);font-size:28px;margin-bottom:6px
+    }
+    .section{padding:42px 0}
+    .section-title{
+      text-align:center;margin:0 0 10px;font-size:34px;color:var(--dark)
+    }
+    .section-sub{
+      text-align:center;max-width:760px;margin:0 auto 28px;color:var(--muted);font-size:17px
+    }
+
+    .about-grid,.products-grid,.gallery-grid,.pricing-grid,.steps-grid,.why-grid,.faq-grid,.contact-grid,.features-grid{
+      display:grid;gap:20px;
+    }
+    .about-grid{grid-template-columns:1fr 1fr}
+    .card{
+      background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:24px
+    }
+    .soft{
+      background:linear-gradient(180deg,#effaf5,#ffffff)
+    }
+    .bullet{display:flex;gap:12px;align-items:flex-start;margin:12px 0;color:#203d33}
+    .bullet span{
+      flex:none;width:28px;height:28px;border-radius:10px;background:#e9f7ef;color:var(--green);
+      display:grid;place-items:center;font-weight:800
+    }
+
+    .products-grid{grid-template-columns:repeat(3,1fr)}
+    .product-card{
+      overflow:hidden;padding:0
+    }
+    .product-thumb{
+      padding:18px;background:linear-gradient(180deg,#eff8f4,#fefefe);
+      border-bottom:1px solid #eef3f0
+    }
+    .product-body{padding:22px}
+    .tag{
+      display:inline-block;background:#e8f8ef;color:#0c6d4e;font-size:13px;font-weight:700;border-radius:999px;padding:6px 10px;margin-bottom:12px
+    }
+
+    .gallery-grid{grid-template-columns:repeat(3,1fr)}
+    .gallery-item{
+      background:#fff;border-radius:26px;overflow:hidden;box-shadow:var(--shadow)
+    }
+    .gallery-text{padding:18px}
+
+    .pricing-grid{grid-template-columns:repeat(3,1fr)}
+    .price-card{
+      position:relative
+    }
+    .price-badge{
+      position:absolute;top:16px;left:16px;background:var(--gold);padding:6px 10px;border-radius:999px;font-weight:800;color:#17332a;font-size:12px
+    }
+    .price{
+      font-size:30px;color:var(--green);font-weight:800;margin:10px 0
+    }
+    .small{color:var(--muted);font-size:14px}
+    .list{padding:0;margin:14px 0 0;list-style:none}
+    .list li{padding:8px 0;border-bottom:1px dashed #e4ece8}
+    .list li:last-child{border-bottom:none}
+
+    .steps-grid{grid-template-columns:repeat(4,1fr)}
+    .step-number{
+      width:50px;height:50px;border-radius:16px;background:linear-gradient(135deg,var(--green),#12a06f);
+      color:#fff;display:grid;place-items:center;font-weight:800;font-size:22px;margin-bottom:14px
+    }
+
+    .why-grid{grid-template-columns:repeat(4,1fr)}
+    .icon{
+      width:54px;height:54px;border-radius:18px;background:#e9f7ef;display:grid;place-items:center;
+      color:var(--green);font-size:24px;margin-bottom:14px
+    }
+
+    .faq-grid{grid-template-columns:1fr 1fr}
+    details{
+      background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:18px 18px 8px
+    }
+    summary{
+      cursor:pointer;font-weight:800;color:var(--dark);list-style:none
+    }
+    summary::-webkit-details-marker{display:none}
+    details p{color:#5c6d66}
+
+    .contact-grid{grid-template-columns:1.1fr .9fr}
+    .contact-box{
+      background:linear-gradient(145deg,#103b30 0%,#0e5b43 55%,#16936a 100%);
+      color:#fff
+    }
+    .contact-box p{color:#e8fff4}
+    .contact-links a{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      background:rgba(255,255,255,.1);padding:14px 16px;border-radius:16px;color:#fff;margin-top:12px
+    }
+    form .field{
+      width:100%;padding:14px 16px;border-radius:14px;border:1px solid #dbe7e2;background:#fff;
+      margin-bottom:12px;font-family:inherit;font-size:15px
+    }
+    textarea.field{min-height:120px;resize:vertical}
+    .note{
+      background:linear-gradient(180deg,#fffbe7,#fff);
+      border:1px solid #f4e2a6;
+      padding:16px;border-radius:16px;color:#65511b;margin-top:18px
+    }
+
+    .features-grid{grid-template-columns:repeat(3,1fr)}
+    .feature{
+      background:#f7fcf9;border:1px solid #e6f1eb;border-radius:18px;padding:18px
+    }
+
+    .footer{
+      margin-top:28px;background:#0f2f26;color:#dcece5;padding:24px 0
+    }
+    .footer-wrap{
+      max-width:var(--max);margin:auto;padding:0 20px;
+      display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap
+    }
+    .footer small{display:block;color:#b4c8c0}
+    .wa{
+      position:fixed;left:18px;bottom:18px;z-index:25;
+      width:58px;height:58px;border-radius:50%;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg,#1bcf77,#0a9a58);color:#fff;font-size:28px;box-shadow:0 12px 26px rgba(2,72,40,.25)
+    }
+
+    @media (max-width:1000px){
+      .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .stats-grid,.products-grid,.gallery-grid,.pricing-grid,.steps-grid,.why-grid,.faq-grid,.features-grid{grid-template-columns:repeat(2,1fr)}
+      .hero h1{font-size:38px}
+    }
+    @media (max-width:680px){
+      .nav-wrap{flex-direction:column;align-items:flex-start}
+      .menu{width:100%}
+      .menu a{font-size:14px}
+      .hero{padding-top:26px}
+      .hero-card,.hero-art{border-radius:24px}
+      .hero h1{font-size:30px}
+      .hero p{font-size:16px}
+      .section{padding:34px 0}
+      .section-title{font-size:28px}
+      .stats-grid,.products-grid,.gallery-grid,.pricing-grid,.steps-grid,.why-grid,.faq-grid,.features-grid{grid-template-columns:1fr}
+      .footer-wrap{justify-content:center;text-align:center}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <div class="nav-wrap">
+      <div class="brand">
+        <div class="brand-badge">☀️</div>
+        <div>
+          انرژی پاک
+          <small style="display:block;font-size:12px;color:#688078;font-weight:700">راهکارهای خورشیدی برای ایران</small>
+        </div>
+      </div>
+      <div class="menu">
+        <a href="#about">درباره ما</a>
+        <a href="#products">محصولات</a>
+        <a href="#pricing">قیمت‌ها</a>
+        <a href="#faq">سوالات متداول</a>
+        <a href="#contact" class="cta">درخواست مشاوره</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-card">
+        <div class="eyebrow">☀️ مشاوره، طراحی و اجرای سیستم‌های خورشیدی</div>
+        <h1>انرژی پاک برای خانه، ویلا، فروشگاه و کسب‌وکار شما</h1>
+        <p>
+          با راهکارهای اقتصادی و اصولی ما، هزینه برق را کاهش دهید، از خاموشی‌ها کمتر آسیب ببینید و
+          برای آینده‌ای سبزتر سرمایه‌گذاری کنید.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">درخواست مشاوره</a>
+          <a class="btn btn-secondary" href="#pricing">مشاهده قیمت‌ها</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <svg viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg" aria-label="تصویر سیستم خورشیدی">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#e9f7ff"/>
+              <stop offset="100%" stop-color="#f7fffb"/>
+            </linearGradient>
+            <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#19476a"/>
+              <stop offset="100%" stop-color="#081d31"/>
+            </linearGradient>
+            <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#dff4e6"/>
+              <stop offset="100%" stop-color="#b8e6c7"/>
+            </linearGradient>
+          </defs>
+          <rect width="700" height="500" rx="30" fill="url(#sky)"/>
+          <circle cx="585" cy="88" r="45" fill="#FFD45C"/>
+          <g stroke="#FFD45C" stroke-width="5" stroke-linecap="round">
+            <line x1="585" y1="20" x2="585" y2="0"/>
+            <line x1="585" y1="176" x2="585" y2="156"/>
+            <line x1="517" y1="88" x2="497" y2="88"/>
+            <line x1="673" y1="88" x2="653" y2="88"/>
+            <line x1="538" y1="41" x2="523" y2="26"/>
+            <line x1="632" y1="135" x2="647" y2="150"/>
+            <line x1="632" y1="41" x2="647" y2="26"/>
+            <line x1="538" y1="135" x2="523" y2="150"/>
+          </g>
+
+          <path d="M0 330C90 280 185 255 290 282C404 311 515 330 700 275V500H0V330Z" fill="url(#ground)"/>
+          <rect x="90" y="205" width="205" height="126" rx="12" fill="#fff" stroke="#d8e5dd"/>
+          <polygon points="68,220 193,138 322,220" fill="#0D5B43"/>
+          <rect x="162" y="263" width="55" height="68" rx="10" fill="#dcece5"/>
+          <rect x="113" y="235" width="36" height="28" rx="8" fill="#d8f3e3"/>
+          <rect x="227" y="235" width="36" height="28" rx="8" fill="#d8f3e3"/>
+
+          <g transform="translate(332 175)">
+            <polygon points="0,105 175,70 237,130 58,164" fill="url(#panel)"/>
+            <polygon points="15,104 175,74 221,127 64,157" fill="none" stroke="#5ba6df" stroke-width="2"/>
+            <g stroke="#5ba6df" stroke-width="1.3">
+              <line x1="43" y1="97" x2="87" y2="153"/>
+              <line x1="80" y1="90" x2="124" y2="147"/>
+              <line x1="118" y1="84" x2="161" y2="140"/>
+              <line x1="154" y1="77" x2="197" y2="133"/>
+              <line x1="31" y1="116" x2="189" y2="87"/>
+              <line x1="40" y1="133" x2="201" y2="103"/>
+              <line x1="50" y1="149" x2="212" y2="120"/>
+            </g>
+            <rect x="38" y="162" width="12" height="62" rx="4" fill="#97a8af"/>
+            <rect x="192" y="130" width="12" height="92" rx="4" fill="#97a8af"/>
+            <line x1="46" y1="222" x2="198" y2="222" stroke="#7d9188" stroke-width="6" stroke-linecap="round"/>
+          </g>
+
+          <g transform="translate(484 285)">
+            <rect x="0" y="22" width="110" height="56" rx="16" fill="#fff" stroke="#dbe7e2"/>
+            <rect x="10" y="33" width="42" height="35" rx="8" fill="#e7f7ef"/>
+            <path d="M22 55C31 34 40 34 46 55" stroke="#15a36f" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M61 44H95" stroke="#0d5b43" stroke-width="7" stroke-linecap="round"/>
+            <path d="M61 56H88" stroke="#9ab1a8" stroke-width="6" stroke-linecap="round"/>
+          </g>
+
+          <g transform="translate(48 342)">
+            <rect x="0" y="0" width="160" height="78" rx="18" fill="#fff" opacity=".94"/>
+            <text x="18" y="34" font-size="18" fill="#0d5b43" font-family="Tahoma, Arial">⚡ کاهش هزینه برق</text>
+            <text x="18" y="58" font-size="16" fill="#50665d" font-family="Tahoma, Arial">سیستم‌های اقتصادی و قابل توسعه</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="container stats">
+      <div class="stats-grid">
+        <div class="stat"><strong>۵+</strong> سال تجربه اجرایی و مشاوره</div>
+        <div class="stat"><strong>۴</strong> نوع راهکار برای خانه و کسب‌وکار</div>
+        <div class="stat"><strong>۹۹٪</strong> تمرکز بر طراحی متناسب با نیاز شما</div>
+        <div class="stat"><strong>۲۴/۷</strong> امکان ثبت درخواست مشاوره</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">چرا «انرژی پاک»؟</h2>
+      <p class="section-sub">
+        ما فقط فروشنده تجهیزات نیستیم؛ هدف ما ارائه راهکار قابل‌فهم، اقتصادی و متناسب با مصرف واقعی شماست.
+        از بررسی نیاز تا پیشنهاد ظرفیت، انتخاب تجهیزات و مشاوره اجرا کنارتان هستیم.
+      </p>
+      <div class="about-grid">
+        <div class="card soft">
+          <h3 style="margin-top:0;color:var(--green)">مزیت همکاری با ما</h3>
+          <div class="bullet"><span>✓</span><div>مشاوره دقیق برای خانه، ویلا، فروشگاه، باغ و کسب‌وکار</div></div>
+          <div class="bullet"><span>✓</span><div>ارائه گزینه‌های اقتصادی و شفاف به‌جای پیشنهادهای غیرضروری</div></div>
+          <div class="bullet"><span>✓</span><div>بررسی اولیه مصرف برق و پیشنهاد ظرفیت متناسب با بودجه شما</div></div>
+          <div class="bullet"><span>✓</span><div>همراهی در انتخاب پنل، اینورتر، باتری و لوازم جانبی</div></div>
+          <div class="bullet"><span>✓</span><div>پشتیبانی و راهنمایی پس از نصب و راه‌اندازی</div></div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;color:var(--green)">کاربردهای اصلی انرژی خورشیدی</h3>
+          <div class="features-grid">
+            <div class="feature"><strong>خانه مسکونی</strong><br><span class="small">برای کاهش هزینه برق و تأمین بخشی از مصرف روزانه</span></div>
+            <div class="feature"><strong>ویلا و باغ</strong><br><span class="small">برای روشنایی، پمپ، دوربین و تجهیزات عمومی</span></div>
+            <div class="feature"><strong>فروشگاه</strong><br><span class="small">برای کاهش هزینه‌های عملیاتی و افزایش پایداری برق</span></div>
+            <div class="feature"><strong>کسب‌وکار</strong><br><span class="small">برای نمایش برند سبز و مدیریت هزینه بلندمدت</span></div>
+            <div class="feature"><strong>سیستم پشتیبان</strong><br><span class="small">مناسب برای زمان قطعی برق و شرایط اضطراری</span></div>
+            <div class="feature"><strong>قابل توسعه</strong><br><span class="small">امکان ارتقا در آینده متناسب با رشد مصرف</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="container">
+      <h2 class="section-title">محصولات و خدمات پیشنهادی</h2>
+      <p class="section-sub">ترکیبی از مشاوره، تجهیزات و طراحی راهکارهایی که متناسب با بودجه و نوع مصرف شما انتخاب می‌شوند.</p>
+
+      <div class="products-grid">
+        <div class="card product-card">
+          <div class="product-thumb">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="180" rx="18" fill="#ecf8f1"/>
+              <circle cx="240" cy="42" r="20" fill="#FFD45C"/>
+              <rect x="35" y="88" width="70" height="48" rx="10" fill="#ffffff" stroke="#dce9e2"/>
+              <polygon points="26,97 69,65 115,97" fill="#0d5b43"/>
+              <g transform="translate(110 60)">
+                <polygon points="0,42 80,24 110,48 28,66" fill="#123554"/>
+                <g stroke="#63ace1" stroke-width="1">
+                  <line x1="16" y1="38" x2="40" y2="60"/><line x1="34" y1="33" x2="57" y2="56"/>
+                  <line x1="50" y1="28" x2="75" y2="51"/><line x1="11" y1="48" x2="93" y2="31"/>
+                  <line x1="19" y1="58" x2="101" y2="42"/>
+                </g>
+                <rect x="18" y="66" width="8" height="35" rx="3" fill="#97a8af"/>
+                <rect x="82" y="53" width="8" height="48" rx="3" fill="#97a8af"/>
+              </g>
+            </svg>
+          </div>
+          <div class="product-body">
+            <span class="tag">پنل و تجهیزات</span>
+            <h3>پنل خورشیدی و ملزومات</h3>
+            <p>پیشنهاد پنل، اینورتر، باتری و سازه نصب متناسب با فضای شما و نیاز مصرفی واقعی.</p>
+          </div>
+        </div>
+
+        <div class="card product-card">
+          <div class="product-thumb">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="180" rx="18" fill="#eff8f4"/>
+              <rect x="36" y="35" width="228" height="110" rx="18" fill="#fff" stroke="#deebe4"/>
+              <rect x="56" y="55" width="88" height="70" rx="12" fill="#e7f7ef"/>
+              <path d="M72 105L88 86L100 98L120 74L132 89" fill="none" stroke="#0d8d62" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M168 65H232" stroke="#0d5b43" stroke-width="8" stroke-linecap="round"/>
+              <path d="M168 87H218" stroke="#93a89f" stroke-width="7" stroke-linecap="round"/>
+              <path d="M168 109H204" stroke="#93a89f" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="product-body">
+            <span class="tag">طراحی و ظرفیت‌سنجی</span>
+            <h3>طراحی سیستم و تحلیل مصرف</h3>
+            <p>بررسی اولیه میزان مصرف، پیشنهاد ظرفیت مناسب، تخمین تجهیزات و مسیر اجرای پروژه.</p>
+          </div>
+        </div>
+
+        <div class="card product-card">
+          <div class="product-thumb">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="180" rx="18" fill="#f6fbf8"/>
+              <rect x="36" y="38" width="228" height="102" rx="18" fill="#0d5b43"/>
+              <circle cx="80" cy="89" r="27" fill="#FFD45C"/>
+              <path d="M80 62V52M80 126V116M53 89H43M117 89H107M60 69L53 62M100 109L107 116M100 69L107 62M60 109L53 116" stroke="#FFD45C" stroke-width="4" stroke-linecap="round"/>
+              <rect x="146" y="64" width="80" height="50" rx="14" fill="#ffffff"/>
+              <path d="M162 86H210" stroke="#0d5b43" stroke-width="8" stroke-linecap="round"/>
+              <path d="M162 101H196" stroke="#8fa59c" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="product-body">
+            <span class="tag">نصب و پشتیبانی</span>
+            <h3>مشاوره اجرا و پشتیبانی</h3>
+            <p>راهنمایی برای انتخاب مجری، نکات نصب، نگهداری و استفاده بهتر از سیستم خورشیدی.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">نمونه کاربردها</h2>
+      <p class="section-sub">چند نمونه تصویری برای اینکه بهتر ببینید سیستم‌های خورشیدی در چه فضاهایی کاربرد دارند.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg">
+            <rect width="420" height="260" fill="#eaf7ff"/>
+            <rect y="180" width="420" height="80" fill="#cdeac9"/>
+            <circle cx="356" cy="48" r="28" fill="#FFD45C"/>
+            <rect x="74" y="108" width="132" height="78" rx="12" fill="#fff" stroke="#dce9e2"/>
+            <polygon points="60,121 140,71 221,121" fill="#0d5b43"/>
+            <g transform="translate(180 90)">
+              <polygon points="0,46 102,24 140,54 35,76" fill="#123554"/>
+              <g stroke="#65aee1" stroke-width="1">
+                <line x1="24" y1="40" x2="52" y2="67"/>
+                <line x1="43" y1="35" x2="70" y2="62"/>
+                <line x1="60" y1="31" x2="88" y2="57"/>
+                <line x1="18" y1="51" x2="119" y2="30"/>
+                <line x1="28" y1="62" x2="129" y2="42"/>
+              </g>
+            </g>
+          </svg>
+          <div class="gallery-text">
+            <strong>خانه مسکونی</strong>
+            <div class="small">مناسب برای کاهش هزینه برق و استفاده روزمره</div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg">
+            <rect width="420" height="260" fill="#eef9f4"/>
+            <rect y="192" width="420" height="68" fill="#c1e6c7"/>
+            <rect x="55" y="96" width="144" height="96" rx="10" fill="#fff" stroke="#dce9e2"/>
+            <rect x="226" y="76" width="142" height="116" rx="10" fill="#0d5b43"/>
+            <rect x="243" y="94" width="108" height="80" rx="10" fill="#ffffff"/>
+            <rect x="75" y="116" width="36" height="58" fill="#e7f7ef"/>
+            <rect x="120" y="116" width="60" height="12" rx="6" fill="#e7f7ef"/>
+            <rect x="120" y="137" width="60" height="12" rx="6" fill="#e7f7ef"/>
+            <rect x="120" y="158" width="50" height="12" rx="6" fill="#e7f7ef"/>
+            <circle cx="350" cy="40" r="22" fill="#FFD45C"/>
+          </svg>
+          <div class="gallery-text">
+            <strong>فروشگاه و کسب‌وکار</strong>
+            <div class="small">مناسب برای کاهش هزینه‌های عملیاتی و پایداری انرژی</div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg">
+            <rect width="420" height="260" fill="#edf8f2"/>
+            <rect y="175" width="420" height="85" fill="#bde0c3"/>
+            <circle cx="335" cy="50" r="28" fill="#FFD45C"/>
+            <path d="M35 175C80 130 130 118 193 133C250 146 311 176 420 152V260H0V190C7 186 19 181 35 175Z" fill="#8fd39c"/>
+            <g transform="translate(110 110)">
+              <polygon points="0,48 120,22 160,54 40,82" fill="#123554"/>
+              <g stroke="#65aee1" stroke-width="1">
+                <line x1="22" y1="43" x2="50" y2="72"/>
+                <line x1="48" y1="37" x2="76" y2="67"/>
+                <line x1="75" y1="31" x2="103" y2="62"/>
+                <line x1="15" y1="57" x2="134" y2="30"/>
+                <line x1="24" y1="69" x2="145" y2="43"/>
+              </g>
+              <rect x="28" y="82" width="8" height="40" rx="3" fill="#97a8af"/>
+              <rect x="116" y="58" width="8" height="64" rx="3" fill="#97a8af"/>
+            </g>
+          </svg>
+          <div class="gallery-text">
+            <strong>ویلا، باغ و فضای باز</strong>
+            <div class="small">مناسب برای روشنایی، پمپ آب، دوربین و تجهیزات جانبی</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <div class="container">
+      <h2 class="section-title">قیمت‌های پیشنهادی و اقتصادی</h2>
+      <p class="section-sub">
+        اعداد زیر نمونه‌ی معرفی و بازه‌ی تقریبی هستند تا مشتری دید اولیه داشته باشد.
+        قیمت نهایی به محل نصب، برند تجهیزات، نوع باتری و ظرفیت سیستم بستگی دارد.
+      </p>
+
+      <div class="pricing-grid">
+        <div class="card price-card">
+          <div class="price-badge">پیشنهاد اقتصادی</div>
+          <h3>پکیج خانگی سبک</h3>
+          <div class="price">از ۴۹ میلیون تومان</div>
+          <div class="small">مناسب برای مصرف سبک و استفاده پایه</div>
+          <ul class="list">
+            <li>بررسی اولیه نیاز مصرف</li>
+            <li>پیشنهاد ظرفیت مناسب</li>
+            <li>مشاوره خرید تجهیزات</li>
+            <li>مناسب خانه یا ویلای کوچک</li>
+          </ul>
+        </div>
+
+        <div class="card price-card" style="border:2px solid #f0d06d">
+          <div class="price-badge">محبوب</div>
+          <h3>پکیج نیمه‌حرفه‌ای</h3>
+          <div class="price">از ۸۹ میلیون تومان</div>
+          <div class="small">برای مصرف بیشتر و پایداری بهتر</div>
+          <ul class="list">
+            <li>پنل + اینورتر + طراحی بهتر</li>
+            <li>قابل توسعه برای آینده</li>
+            <li>مناسب خانه، فروشگاه و باغ</li>
+            <li>راهنمایی اجرا و نصب</li>
+          </ul>
+        </div>
+
+        <div class="card price-card">
+          <div class="price-badge">سفارشی</div>
+          <h3>پکیج کسب‌وکاری</h3>
+          <div class="price">قیمت‌گذاری اختصاصی</div>
+          <div class="small">برای پروژه‌های بزرگ‌تر و ویژه</div>
+          <ul class="list">
+            <li>طراحی متناسب با مصرف واقعی</li>
+            <li>پیشنهاد تجهیزات حرفه‌ای</li>
+            <li>تحلیل هزینه و توجیه اقتصادی</li>
+            <li>مناسب فروشگاه و کسب‌وکار</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="note">
+        <strong>نکته مهم:</strong>
+        این قیمت‌ها صرفاً برای ارائه دید اولیه به مشتری است و به‌راحتی قابل ویرایش هستند.
+        اگر خواستید می‌توانیم بعداً جدول قیمت‌ها را با اعداد دلخواه شما دقیق‌تر کنیم.
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">مراحل همکاری با ما</h2>
+      <p class="section-sub">از اولین تماس تا پیشنهاد نهایی، مسیر کار ساده و شفاف طراحی شده است.</p>
+
+      <div class="steps-grid">
+        <div class="card">
+          <div class="step-number">۱</div>
+          <h3>ثبت درخواست</h3>
+          <p>از طریق تماس، واتساپ یا فرم سایت، نیاز خود را برای ما ارسال می‌کنید.</p>
+        </div>
+        <div class="card">
+          <div class="step-number">۲</div>
+          <h3>بررسی نیاز</h3>
+          <p>نوع مصرف، بودجه، فضای نصب و هدف شما بررسی می‌شود.</p>
+        </div>
+        <div class="card">
+          <div class="step-number">۳</div>
+          <h3>پیشنهاد راهکار</h3>
+          <p>بازه قیمت، ظرفیت مناسب و تجهیزات پیشنهادی ارائه می‌شود.</p>
+        </div>
+        <div class="card">
+          <div class="step-number">۴</div>
+          <h3>نهایی‌سازی</h3>
+          <p>پس از تأیید، مسیر تهیه تجهیزات و اجرای پروژه مشخص می‌گردد.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">چرا مشتری‌ها به ما اعتماد می‌کنند؟</h2>
+      <p class="section-sub">ترکیب طراحی خوب، توضیح شفاف و پیشنهاد اقتصادی باعث می‌شود مشتری تصمیم راحت‌تری بگیرد.</p>
+
+      <div class="why-grid">
+        <div class="card">
+          <div class="icon">💰</div>
+          <h3>قیمت‌گذاری منصفانه</h3>
+          <p>گزینه‌های اقتصادی و قابل‌فهم، بدون تحمیل هزینه‌های غیرضروری.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⚙️</div>
+          <h3>پیشنهاد فنی کاربردی</h3>
+          <p>راهکارها بر اساس نیاز واقعی شما طراحی می‌شوند نه صرفاً فروش بیشتر.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📞</div>
+          <h3>پاسخگویی سریع</h3>
+          <p>برای مشاوره، استعلام و راهنمایی در کنار شما هستیم.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🌱</div>
+          <h3>نگاه بلندمدت</h3>
+          <p>هدف ما کاهش هزینه و کمک به حرکت به سمت انرژی پاک و پایدار است.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="section-title">سوالات متداول</h2>
+      <p class="section-sub">چند سوال پرتکرار که معمولاً مشتری‌ها قبل از شروع می‌پرسند.</p>
+      <div class="faq-grid">
+        <details open>
+          <summary>آیا این سیستم‌ها برای خانه هم مناسب هستند؟</summary>
+          <p>بله. بسته به میزان مصرف، بودجه و فضای موجود، می‌توان راهکار مناسب برای خانه مسکونی هم طراحی کرد.</p>
+        </details>
+        <details>
+          <summary>قیمت نهایی چگونه مشخص می‌شود؟</summary>
+          <p>قیمت نهایی به ظرفیت موردنیاز، نوع تجهیزات، محل نصب و ویژگی‌های پروژه بستگی دارد. ابتدا بازه تقریبی داده می‌شود و بعد قیمت دقیق‌تر اعلام می‌گردد.</p>
+        </details>
+        <details>
+          <summary>آیا امکان مشاوره قبل از خرید وجود دارد؟</summary>
+          <p>بله. یکی از خدمات اصلی ما مشاوره قبل از خرید است تا مشتری با آگاهی کامل تصمیم بگیرد.</p>
+        </details>
+        <details>
+          <summary>آیا سیستم‌ها قابل توسعه هستند؟</summary>
+          <p>بله. در بسیاری از پروژه‌ها می‌توان سیستم را به‌صورت مرحله‌ای طراحی کرد تا بعداً ارتقا پیدا کند.</p>
+        </details>
+        <details>
+          <summary>برای ویلا و باغ هم جواب می‌دهد؟</summary>
+          <p>بله. سیستم‌های خورشیدی برای ویلا، باغ، روشنایی محیط، پمپ و تجهیزات جانبی بسیار کاربردی هستند.</p>
+        </details>
+        <details>
+          <summary>آیا پرداخت آنلاین هم می‌توان اضافه کرد؟</summary>
+          <p>بله. در صورت نیاز بعداً می‌توان برای سایت درگاه پرداخت، فرم ثبت سفارش و امکانات بیشتر هم اضافه کرد.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">درخواست مشاوره و ارتباط با ما</h2>
+      <p class="section-sub">برای دریافت راهنمایی اولیه، استعلام قیمت و بررسی پروژه، همین حالا با ما در تماس باشید.</p>
+
+      <div class="contact-grid">
+        <div class="card contact-box">
+          <h3 style="margin-top:0;font-size:30px">بیایید درباره پروژه شما صحبت کنیم</h3>
+          <p>
+            اگر برای خانه، فروشگاه، باغ، ویلا یا کسب‌وکارتان به دنبال راهکار خورشیدی هستید،
+            اطلاعات اولیه را برای ما بفرستید تا بهترین گزینه را به شما پیشنهاد دهیم.
+          </p>
+          <div class="contact-links">
+            <a href="tel:09904824184"><span>📞 تماس مستقیم</span><strong>۰۹۹۰۴۸۲۴۱۸۴</strong></a>
+            <a href="https://wa.me/989904824184" target="_blank"><span>💬 پیام در واتساپ</span><strong>ارسال پیام</strong></a>
+            <a href="mailto:info@example.com"><span>✉️ ایمیل</span><strong>info@example.com</strong></a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;color:var(--green)">فرم درخواست مشاوره</h3>
+          <form id="consultForm" onsubmit="sendToWhatsApp(event)">
+            <input class="field" id="fullName" type="text" placeholder="نام و نام خانوادگی" required>
+            <input class="field" id="phone" type="tel" placeholder="شماره تماس" required>
+            <input class="field" id="projectType" type="text" placeholder="نوع پروژه (خانه، ویلا، فروشگاه و...)" required>
+            <textarea class="field" id="details" placeholder="توضیحات پروژه، بودجه تقریبی یا نیاز مصرفی خود را بنویسید" required></textarea>
+            <button class="btn btn-primary" type="submit">ثبت درخواست و ارسال در واتساپ</button>
+          </form>
+          <div class="note">
+            بعد از زدن دکمه، واتساپ شما باز می‌شود و اطلاعات فرم به‌صورت یک پیام آماده برای شماره پشتیبانی قرار می‌گیرد. فقط کافی است در واتساپ روی «ارسال» بزنید.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-wrap">
+      <div>
+        <strong style="font-size:18px">انرژی پاک</strong>
+        <small>راهکارهای خورشیدی برای خانه و کسب‌وکار</small>
+      </div>
+      <div>
+        <small>تلفن تماس: ۰۹۹۰۴۸۲۴۱۸۴</small>
+        <small>© ۲۰۲۶ تمامی حقوق برای انرژی پاک محفوظ است.</small>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa" href="https://wa.me/989904824184" target="_blank" aria-label="واتساپ">✆</a>
+
+
+<script>
+function sendToWhatsApp(event){
+  event.preventDefault();
+
+  const name = document.getElementById('fullName').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const project = document.getElementById('projectType').value.trim();
+  const details = document.getElementById('details').value.trim();
+
+  if(!name || !phone || !project || !details){
+    alert('لطفاً همه فیلدها را کامل کنید.');
+    return;
+  }
+
+  const message =
+`سلام، از طریق سایت «انرژی پاک» درخواست مشاوره دارم.
+
+نام و نام خانوادگی: ${name}
+شماره تماس: ${phone}
+نوع پروژه: ${project}
+
+توضیحات:
+${details}`;
+
+  const whatsappNumber = '989904824184';
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
